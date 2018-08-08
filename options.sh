@@ -19,6 +19,9 @@ _update () {
     else
         dialog --msgbox "ERROR: Unable to download update." 5 45
     fi
+    # Cleanup
+    rm update-dos.sh
+    rm update-dos.sh.signed
 }
 
 # Display battery status in dialog window
