@@ -6,7 +6,8 @@ KEY=LS0tLS1CRUdJTiBQR1AgUFVCTElDIEtFWSBCTE9DSy0tLS0tCgptUUdOQkZ0cDdvOEJEQUN1WVBL
 VERSION=1
 
 # Install packages
-apt update
+apt-get update
+sleep 2
 apt --yes install xorg xinit upower xbindkeys xbacklight alsa-utils dosbox dialog usbmount pmount
 if [[ $? != 0 ]]; then exit; fi
 
